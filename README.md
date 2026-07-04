@@ -42,4 +42,4 @@ https://turanarican.com
 
 ## Design Credit
 
-Design based on the **Interior Design Website UI Template** by **DSCODE** on Figma Community.
+Design based on the [Interior Design Website UI Template](https://www.figma.com/design/ZuDiW5UAXQwDKPYVb1ufzC/Interior-Design-Website-UI-Template--Community-?node-id=0-1&p=f&t=Knn8agO63cf4HZQa-0) by [DSCODE](https://www.figma.com/files/team/1048295197426368725/resources/community/@dscodestudio?fuid=1048295191527913563) on Figma Community.
