@@ -1,183 +1,233 @@
-import minimalArmchair from "../assets/images/sections/minimal-armchair-wall-niche.webp";
-import sofaPlant from "../assets/images/sections/sofa-plant-minimal-living-room.webp";
+import minimalArmchairImage from "../assets/images/sections/minimal-armchair-wall-niche.webp";
+import sofaPlantImage from "../assets/images/sections/sofa-plant-minimal-living-room.webp";
 
-import lightingDesignIcon from "../assets/icons/services/lighting-design.svg";
-import interiorDesignIcon from "../assets/icons/services/interior-design.svg";
-import outdoorDesignIcon from "../assets/icons/services/outdoor-design.svg";
+import lightingDesignServiceIcon from "../assets/icons/services/lighting-design.svg";
+import interiorDesignServiceIcon from "../assets/icons/services/interior-design.svg";
+import outdoorDesignServiceIcon from "../assets/icons/services/outdoor-design.svg";
 
-import brillianceImage from "../assets/images/gallery/sunlit-living-dining-room.webp";
+import sunlitLivingDiningRoomImage from "../assets/images/gallery/sunlit-living-dining-room.webp";
 
-import threeStepsImage from "../assets/images/hero/hero-modern-living-room.webp";
+import modernLivingRoomHeroImage from "../assets/images/hero/hero-modern-living-room.webp";
 
-import rocketIcon from "../assets/icons/process/site-visit.svg";
-import bulbIcon from "../assets/icons/process/idea-lightbulb.svg";
-import tickIcon from "../assets/icons/process/approval-check.svg";
+import siteVisitStepIcon from "../assets/icons/process/site-visit.svg";
+import ideaLightbulbStepIcon from "../assets/icons/process/idea-lightbulb.svg";
+import approvalCheckStepIcon from "../assets/icons/process/approval-check.svg";
 
-import womanAvatar from "../assets/images/avatars/testimonial-woman-avatar.webp";
-import manAvatar from "../assets/images/avatars/testimonial-man-avatar.png";
+import sophieCarterAvatar from "../assets/images/avatars/testimonial-woman-avatar.webp";
+import jamesBennettAvatar from "../assets/images/avatars/testimonial-man-avatar.png";
 
-import emailIcon from "../assets/icons/contact/email.svg";
+import emailInputIcon from "../assets/icons/contact/email.svg";
 
-import footerLogo from "../assets/brand/vivadecor-logo-light.svg";
-import fbLogo from "../assets/icons/social/facebook.svg";
-import instagramLogo from "../assets/icons/social/instagram.svg";
-import linkedinLogo from "../assets/icons/social/linkedin.svg";
-import xLogo from "../assets/icons/social/x-twitter.svg";
+import vivaDecorHeaderLogo from "../assets/brand/vivadecor-logo-dark.svg";
+import vivaDecorFooterLogo from "../assets/brand/vivadecor-logo-light.svg";
+import facebookSocialIcon from "../assets/icons/social/facebook.svg";
+import instagramSocialIcon from "../assets/icons/social/instagram.svg";
+import linkedinSocialIcon from "../assets/icons/social/linkedin.svg";
+import xTwitterSocialIcon from "../assets/icons/social/x-twitter.svg";
 
-export const topNavLinks = [
-  { label: "Home", href: "#home", active: true },
-  { label: "Services", href: "#services", active: false },
-  { label: "Contact", href: "#contact", active: false },
-  { label: "Support", href: "#support", active: false },
+export const navigationLinks = [
+  { label: "Home", url: "#home" },
+  { label: "Services", url: "#services" },
+  { label: "Contact", url: "#contact" },
+  { label: "Support", url: "#support" },
 ];
 
-export const hero = {
+export const brandAssets = {
+  headerLogo: {
+    src: vivaDecorHeaderLogo,
+    alt: "VivaDecor",
+  },
+  footerLogo: {
+    src: vivaDecorFooterLogo,
+    alt: "VivaDecor",
+  },
+};
+
+export const heroSection = {
   title: "Interior Design",
-  bodyText:
+  description:
     "Step into a world where the art of Interior Design is meticulously crafted to bring together timeless elegance and cutting-edge modern innovation, allowing you to transform your living spaces into the epitome of luxury and sophistication",
   projectsCompleted: 400,
   satisfiedClients: 600,
   uniqueStyles: 100,
-  images: [
-    { image: minimalArmchair, alt: "minimal-armchair-wall-niche" },
-    { image: sofaPlant, alt: "sofa-plant-minimal-living-room" },
+  galleryImages: [
+    {
+      src: minimalArmchairImage,
+      alt: "Minimal armchair beside a sculpted wall niche in a modern interior",
+    },
+    {
+      src: sofaPlantImage,
+      alt: "Minimal living room with a soft sofa and indoor plant",
+    },
   ],
 };
 
-export const serviceCards = [
+export const serviceItems = [
   {
-    icon: lightingDesignIcon,
+    id: "lighting-design-service",
+    icon: lightingDesignServiceIcon,
     title: "Lighting Design",
-    bodyText:
+    description:
       "Achieve the perfect balance of ambient, task, and accent lighting for a functional atmosphere",
   },
   {
-    icon: interiorDesignIcon,
+    id: "interior-design-service",
+    icon: interiorDesignServiceIcon,
     title: "Interior Design",
-    bodyText:
+    description:
       "From concept to completion, we oversee every detail to bring your vision to life efficiently",
   },
   {
-    icon: outdoorDesignIcon,
+    id: "outdoor-design-service",
+    icon: outdoorDesignServiceIcon,
     title: "Outdoor Design",
-    bodyText:
+    description:
       "Celebrate the changing seasons with our seasonal outdoor decor services",
   },
 ];
 
-export const brilliance = {
+export const designShowcaseSection = {
   title: "Designing Your Dream With Brilliance",
-  bodyText:
+  description:
     "Elevate your spaces with bespoke interior designs that reflect your unique style and aspirations, crafted with precision and brilliance for an unforgettable living experience",
-
-  image: brillianceImage,
-  imageAlt: "Designing Your Dream With Brilliance",
+  image: {
+    src: sunlitLivingDiningRoomImage,
+    alt: "Sunlit living and dining room with warm neutral interior styling",
+  },
 };
 
-export const accordion = [
-  { id: 1, title: "Living Room Interior Design", bodyText: "Some text" },
+export const designTopics = [
   {
-    id: 2,
+    id: "living-room-interior-design",
+    title: "Living Room Interior Design",
+    description:
+      "Create a calm, elegant living area with balanced layouts, layered textures, and furniture selected for both comfort and style.",
+  },
+  {
+    id: "commercial-office-room-interior-design",
     title: "Commercial Office Room Interior Design",
-    bodyText: "Some text",
+    description:
+      "Design productive office spaces that support collaboration, reflect your brand, and make everyday work feel more refined.",
   },
 ];
 
-export const threeSimpleSteps = {
+export const processSection = {
   title: "Designing Your Dream in Three Simple Steps",
-  image: {
-    image: threeStepsImage,
-    alt: "hero-modern-living-room",
+  illustration: {
+    src: modernLivingRoomHeroImage,
+    alt: "Modern living room with layered seating and natural light",
   },
   steps: [
     {
       id: 1,
-      icon: rocketIcon,
+      icon: siteVisitStepIcon,
       title: "Start Project",
-      bodyText:
+      description:
         "Embark on your design adventure by initiating your project. Share your vision and set the stage for a bespoke design experience",
     },
     {
       id: 2,
-      icon: bulbIcon,
+      icon: ideaLightbulbStepIcon,
       title: "Craft",
-      bodyText:
+      description:
         "Collaborate closely to achieve design excellence, refining your vision and crafting brilliance into every aspect of your space",
     },
     {
       id: 3,
-      icon: tickIcon,
+      icon: approvalCheckStepIcon,
       title: "Execute",
-      bodyText:
+      description:
         "Witness your vision becoming a reality as we execute the design plan with precision. Celebrate the joy of your newly transformed space",
     },
   ],
 };
 
-export const testimonials = {
+export const testimonialSection = {
   title: "What Our Customers Say About Us",
-  testimonials: [
+  items: [
     {
       id: 1,
-      bodyText:
+      quote:
         "Working with your design team was an absolute pleasure. The attention to detail and creativity exceeded my expectations. Thank you for making my home beautiful!",
       author: "Sophie Carter",
       location: "New York, USA",
-      avatar: womanAvatar,
+      avatar: sophieCarterAvatar,
     },
     {
       id: 2,
-      bodyText:
+      quote:
         "Exceptional service! From the initial consultation to the final reveal, your team demonstrated professionalism and a keen eye for design. Highly recommend!",
       author: "James Bennett",
       location: "Toronto, Canada",
-      avatar: manAvatar,
+      avatar: jamesBennettAvatar,
     },
   ],
 };
 
-export const newsletter = {
+export const newsletterSection = {
   title: "Subscribe to Our Newsletter for Design Insights",
-  bodyText:
+  description:
     "Be the first to discover trends, inspirations, and special offers as we bring the world of design directly to your inbox",
-  inputPlaceholder: "Enter your email address",
-  buttonText: "Subscribe",
-  inputIcon: emailIcon,
+  emailPlaceholder: "Enter your email address",
+  submitLabel: "Subscribe",
+  emailIcon: emailInputIcon,
 };
 
-export const footer = {
-  logo: footerLogo,
-  bodyText:
+export const footerContent = {
+  logo: brandAssets.footerLogo,
+  description:
     "VivaDecor is your premier destination for luxury and modern interior design",
-  socialLogos: [
-    { id: 1, logo: fbLogo },
-    { id: 2, logo: xLogo },
-    { id: 3, logo: instagramLogo },
-    { id: 4, logo: linkedinLogo },
+  socialLinks: [
+    { id: 1, icon: facebookSocialIcon },
+    { id: 2, icon: xTwitterSocialIcon },
+    { id: 3, icon: instagramSocialIcon },
+    { id: 4, icon: linkedinSocialIcon },
   ],
-  columns: [
+  linkGroups: [
     {
       title: "Our Services",
       links: [
-        { id: 1, text: "Interior design" },
-        { id: 2, text: "Outdoor design" },
-        { id: 3, text: "Lighting design" },
-        { id: 4, text: "Office design" },
+        { id: 1, label: "Interior design", url: "#interior-design-service" },
+        { id: 2, label: "Outdoor design", url: "#outdoor-design-service" },
+        { id: 3, label: "Lighting design", url: "#lighting-design-service" },
+        {
+          id: 4,
+          label: "Office design",
+          url: "#commercial-office-room-interior-design",
+        },
       ],
     },
     {
       title: "Company",
       links: [
-        { id: 1, text: "Reviews" },
-        { id: 2, text: "Careers" },
-        { id: 3, text: "Pricing" },
-        { id: 4, text: "Press inquiries" },
+        { id: 1, label: "Reviews", url: "#reviews" },
+        { id: 2, label: "Careers", url: "#support" },
+        { id: 3, label: "Pricing", url: "#support" },
+        { id: 4, label: "Press inquiries", url: "#contact" },
       ],
     },
   ],
   contact: {
-    title: "Contact",
+    heading: "Contact",
     email: "info@vivadecor.com",
     address: "Design Avenue Cityville, CA 90210 United States",
+  },
+  credit: {
+    design: {
+      label: "design",
+      url: "https://www.figma.com/design/ZuDiW5UAXQwDKPYVb1ufzC/Interior-Design-Website-UI-Template--Community-?node-id=0-1&p=f&t=Knn8agO63cf4HZQa-0",
+    },
+    designer: {
+      label: "DSCODE",
+      url: "https://www.figma.com/files/team/1048295197426368725/resources/community/@dscodestudio?fuid=1048295191527913563",
+    },
+    code: {
+      label: "code",
+      url: "https://github.com/aricansoft2022/portfolio.interiordesigner",
+    },
+    developer: {
+      label: "Halit Turan ARICAN",
+      url: "https://turanarican.com",
+    },
   },
 };

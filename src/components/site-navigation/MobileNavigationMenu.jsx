@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
-import { topNavLinks } from "../../data/content";
-import MenuButton from "./MenuButton";
-import MenuItem from "./MenuItem";
+import { navigationLinks } from "../../data/content";
+import MobileMenuToggle from "./MobileMenuToggle";
+import NavigationMenuItem from "./NavigationMenuItem";
 
-export default function MobileMenu() {
+export default function MobileNavigationMenu({ activeHref }) {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
@@ -22,18 +22,18 @@ export default function MobileMenu() {
   }, []);
 
   return (
-    <>
+    <div className="md:hidden">
       <ul
         id="mobile-menu"
         aria-hidden={!open}
         inert={!open ? true : undefined}
         className={`fixed z-10 flex flex-col items-center justify-center gap-12 bg-white h-dvh left-0 w-full transition-all duration-500 ${open ? "top-0" : "-top-full"}`}
       >
-        {topNavLinks.map(({ label, href, active }) => (
-          <MenuItem
+        {navigationLinks.map(({ label, url }) => (
+          <NavigationMenuItem
             key={label}
-            href={href}
-            active={active}
+            href={url}
+            active={activeHref === url}
             text={label}
             variant="mobile"
             setOpen={setOpen}
@@ -41,7 +41,7 @@ export default function MobileMenu() {
         ))}
       </ul>
 
-      <MenuButton open={open} setOpen={setOpen} />
-    </>
+      <MobileMenuToggle open={open} setOpen={setOpen} />
+    </div>
   );
 }

@@ -1,4 +1,10 @@
-export default function MenuItem({ text, active, href, variant, setOpen }) {
+export default function NavigationMenuItem({
+  text,
+  active,
+  href,
+  variant,
+  setOpen,
+}) {
   return (
     <li>
       <a

@@ -2,20 +2,65 @@
 @import "tailwindcss";
 
 @theme {
-  --color-grey-0: #ffffff;
-  --color-grey-50: #f1f1f1;
-  --color-grey-100: #e5e5e5;
-  --color-grey-150: #e5e6e8;
-  --color-grey-200: #dadada;
   --color-grey-300: #d1d1d1;
-  --color-grey-400: #9b9b9b;
   --color-grey-450: #929292;
-  --color-grey-500: #8c8c8c;
   --color-grey-600: #545454;
-  --color-grey-700: #464646;
   --color-grey-800: #313131;
   --color-grey-900: #1f1f1f;
-  --color-red-3: #ff6787;
 
   --font-inter: "Inter", sans-serif;
+}
+
+@layer components {
+  .section-title {
+    @apply font-semibold text-grey-900 text-6xl;
+  }
+
+  .section-title-start {
+    @apply self-start font-semibold text-[54px] text-grey-900;
+  }
+
+  .body-copy-lg {
+    @apply text-grey-600 text-2xl;
+  }
+
+  .body-copy-lg-medium {
+    @apply font-medium text-grey-600 text-2xl;
+  }
+
+  .body-copy-xl-medium {
+    @apply font-medium text-2xl;
+  }
+
+  .body-copy-center {
+    @apply text-center;
+  }
+
+  .footer-heading {
+    @apply font-semibold text-2xl;
+  }
+
+  .footer-copy {
+    @apply text-[22px] text-grey-300;
+  }
+
+  .footer-copy-list {
+    @apply flex flex-col gap-4 text-[22px] text-grey-300;
+  }
+
+  .hero-stat-value {
+    @apply text-[55px] text-grey-600 text-nowrap;
+  }
+
+  .hero-stat-label {
+    @apply text-[22px] text-grey-600;
+  }
+
+  .testimonial-location {
+    @apply font-medium text-grey-450 text-xl;
+  }
+
+  .accordion-title {
+    @apply font-semibold text-2xl;
+  }
 }

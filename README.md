@@ -1,16 +1,45 @@
-# React + Vite
+# VivaDecor Interior Design Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This project is a frontend portfolio piece by **Halit Turan ARICAN** that presents a polished interior design landing page built with **React**, **Vite**, and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+It is intended to show that I am comfortable with the fundamentals of modern web development and React-based UI work: component structure, semantic HTML, responsive layout, reusable styling, content modeling, accessibility-minded decisions, and production-oriented cleanup.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The project was developed with **minimal AI assistance**, limited to targeted help for debugging, error fixing, and final polish. The main implementation, structure, refinement, and technical decisions were driven by me.
 
-## React Compiler
+## What This Project Demonstrates
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React component composition and prop design
+- Content-driven UI structure
+- Responsive navigation and layout handling
+- Semantic HTML improvements and accessibility cleanup
+- Basic SEO improvements for a static React site
+- Project organization, naming, and maintainability refactors
 
-## Expanding the Oxlint configuration
+## Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React
+- Vite
+- Tailwind CSS
+- Oxlint
+
+## Local Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Production Build
+
+```bash
+npm run build
+```
+
+## Author
+
+**Halit Turan ARICAN**  
+https://turanarican.com
+
+## Design Credit
+
+Design based on the **Interior Design Website UI Template** by **DSCODE** on Figma Community.

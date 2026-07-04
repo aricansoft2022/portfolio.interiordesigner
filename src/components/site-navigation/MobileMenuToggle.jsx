@@ -1,4 +1,4 @@
-export default function MenuButton({ setOpen, open }) {
+export default function MobileMenuToggle({ setOpen, open }) {
   return (
     <button
       type="button"
