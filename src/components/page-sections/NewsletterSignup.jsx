@@ -18,10 +18,10 @@ export default function NewsletterSignup() {
         {newsletterSection.description}
       </p>
       <form
-        className="flex justify-between shadow-2xl shadow-grey-300/40 p-2 w-full"
+        className="flex flex-col md:flex-row md:justify-between gap-2 md:gap-0 shadow-2xl shadow-grey-300/40 p-2 w-full"
         onSubmit={(event) => event.preventDefault()}
       >
-        <div className="flex items-center gap-4 ml-2 p-4 w-full">
+        <div className="flex items-center gap-4 md:ml-2 p-4 w-full">
           <img src={newsletterSection.emailIcon} alt="" aria-hidden="true" />
           <label htmlFor="newsletter-email" className="sr-only">
             Email address
@@ -33,7 +33,11 @@ export default function NewsletterSignup() {
             className="outline-none w-full text-2xl"
           />
         </div>
-        <PrimaryButton text={newsletterSection.submitLabel} type="submit" />
+        <PrimaryButton
+          text={newsletterSection.submitLabel}
+          type="submit"
+          className="w-full md:w-fit"
+        />
       </form>
     </section>
   );

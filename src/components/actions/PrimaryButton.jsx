@@ -1,6 +1,10 @@
-export default function PrimaryButton({ text, href, type = "button" }) {
-  const className =
-    "flex items-center bg-grey-900 hover:bg-grey-800 px-8 py-3 rounded w-fit text-white cursor-pointer";
+export default function PrimaryButton({
+  text,
+  href,
+  type = "button",
+  className: widthClassName = "w-fit",
+}) {
+  const className = `flex items-center justify-center bg-grey-900 hover:bg-grey-800 px-8 py-3 rounded text-white cursor-pointer ${widthClassName}`;
 
   if (href) {
     return (
