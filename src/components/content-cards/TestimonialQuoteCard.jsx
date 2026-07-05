@@ -4,7 +4,7 @@ export default function TestimonialQuoteCard({ testimonial }) {
   return (
     <li className="bg-black p-12 text-white">
       <figure className="flex flex-col gap-12 h-full">
-        <p aria-hidden="true" className="font-medium text-[150px] leading-20">
+        <p aria-hidden="true" className="font-medium text-8xl lg:text-[150px] leading-20">
           “
         </p>
         <blockquote className="body-copy-xl-medium">

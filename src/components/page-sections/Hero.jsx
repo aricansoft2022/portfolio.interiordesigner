@@ -14,7 +14,7 @@ export default function Hero() {
           <div className="flex flex-col gap-10">
             <h1
               id="hero-title"
-              className="font-medium text-[133px] text-grey-900"
+              className="font-medium text-7xl sm:text-8xl lg:text-[133px] text-grey-900"
             >
               {heroSection.title}
             </h1>

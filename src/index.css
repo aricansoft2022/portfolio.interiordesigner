@@ -13,11 +13,11 @@
 
 @layer components {
   .section-title {
-    @apply font-semibold text-grey-900 text-6xl;
+    @apply font-semibold text-grey-900 text-4xl sm:text-5xl lg:text-6xl;
   }
 
   .section-title-start {
-    @apply self-start font-semibold text-[54px] text-grey-900;
+    @apply self-start font-semibold text-4xl sm:text-5xl lg:text-[54px] text-grey-900;
   }
 
   .body-copy-lg {
@@ -49,11 +49,11 @@
   }
 
   .hero-stat-value {
-    @apply text-[55px] text-grey-600 text-nowrap;
+    @apply text-3xl sm:text-4xl lg:text-[55px] text-grey-600 text-nowrap;
   }
 
   .hero-stat-label {
-    @apply text-[22px] text-grey-600;
+    @apply text-base sm:text-lg lg:text-[22px] text-grey-600;
   }
 
   .testimonial-location {
